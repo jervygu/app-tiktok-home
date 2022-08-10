@@ -120,25 +120,21 @@ class VideoCollectionViewCell: UICollectionViewCell {
     }
     
     @objc private func didTapProfileButton() {
-        print("didTapProfileButton")
         guard let model = model else { return }
         delegate?.didTapProfileButton(with: model)
     }
     
     @objc private func didTapLikeButton() {
-        print("didTapLikeButton")
         guard let model = model else { return }
         delegate?.didTapLikeButton(with: model)
     }
     
     @objc private func didTapCommentButton() {
-        print("didTapCommentButton")
         guard let model = model else { return }
         delegate?.didTapCommentButton(with: model)
     }
     
     @objc private func didTapShareButton() {
-        print("didTapShareButton")
         guard let model = model else { return }
         delegate?.didTapShareButton(with: model)
     }

@@ -78,10 +78,27 @@ extension ViewController: UICollectionViewDataSource {
         }
         
         cell.configure(with: model)
-        
+        cell.delegate = self
         return cell
     }
+}
+
+extension ViewController: VideoCollectionViewCellDelegate {
+    func didTapProfileButton(with model: VideoModel) {
+        print("didTapProfileButton")
+    }
     
+    func didTapLikeButton(with model: VideoModel) {
+        print("didTapLikeButton")
+    }
+    
+    func didTapCommentButton(with model: VideoModel) {
+        print("didTapCommentButton")
+    }
+    
+    func didTapShareButton(with model: VideoModel) {
+        print("didTapShareButton")
+    }
     
     
 }
